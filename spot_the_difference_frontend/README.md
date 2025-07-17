@@ -11,7 +11,24 @@ This project provides a minimal React template with a clean, modern UI and minim
 
 ## Getting Started
 
-In the project directory, you can run:
+> **Important: Supplying Your Game Images**
+>
+> For the Spot the Difference game to work, you must place two high-resolution images in the `public` directory. Name them exactly as:
+>
+> - `image1.jpg` (the *left* image - original)
+> - `image2.jpg` (the *right* image - with subtle differences)
+>
+> *Recommended: Both images should be the same size (e.g., 480x480 pixels) for best display and click accuracy.*
+>
+> Place them here:
+> ```
+> spot_the_difference_frontend/
+> └── public/
+>     ├── image1.jpg
+>     └── image2.jpg
+> ```
+>
+> After adding your images, start or reload the app to play.
 
 ### `npm start`
 

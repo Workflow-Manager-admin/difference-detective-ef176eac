@@ -30,9 +30,16 @@ const DEMO_DIFFERENCES = [
 // Minimum pixel distance to accept as a found difference (radius for hit check)
 const DIFF_RADIUS_PX = 35;
 
-// Demo images (could be public/image1.jpg, ... in real app)
-const IMAGE_LEFT = "https://images.unsplash.com/photo-1611095564985-e5b498e3326e?auto=format&fit=crop&w=480&q=80";
-const IMAGE_RIGHT = "https://images.unsplash.com/photo-1611095565275-2d981c25f3b0?auto=format&fit=crop&w=480&q=80";
+/*
+  Demo images: For best reliability, place your high-resolution game images
+  as 'image1.jpg' and 'image2.jpg' in the 'public' directory.
+  These images will be shown as the left and right images in the game.
+  Example (recommended size: 480x480px):
+    - /public/image1.jpg  (for IMAGE_LEFT)
+    - /public/image2.jpg  (for IMAGE_RIGHT)
+*/
+const IMAGE_LEFT = process.env.PUBLIC_URL + "/image1.jpg";
+const IMAGE_RIGHT = process.env.PUBLIC_URL + "/image2.jpg";
 
 function getDistance(x1, y1, x2, y2) {
   return Math.sqrt((x1-x2)**2 + (y1-y2)**2);
